@@ -43,3 +43,21 @@ function multiply(a, b) {
 
 const loggedMultiply = logDecorator(multiply);
 console.log(loggedMultiply(3, 5));
+
+function Person(nama) {
+  this.nama = nama;
+}
+
+const user1 = new Person("Dicky");
+const user2 = new Person("Ucup");
+console.log(user1);
+console.log(user2);
+
+class Manusia {
+  constructor(nama) {
+    this.nama = nama;
+  }
+}
+
+class Dicky extends Manusia {}
+class Tanto extends Manusia {}
